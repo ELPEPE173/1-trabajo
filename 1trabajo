@@ -2,15 +2,20 @@ None
 meme_dict = {
             "CRINGE": "Algo excepcionalmente raro o embarazoso",
             "LOL": "Una respuesta común a algo gracioso",
-            "POV": "es un punto de vista de algo sucesido",
-            "CREEPY": "aterrador siniestro"
+            "POV": "es un punto de vista de algo sucesido", 
+            "CREEPY": "aterrador siniestro",
+            "ROFL": "una respuesta a una broma",
+            "SHEESH": "ligera desaprobación",
+            "AGGRO": "ponerse agresivo/enojado"
             }
+for i in range(5):
+    word = input("Escribe una palabra que no entiendas (¡con mayúsculas!): ") 
 
-word = input("Escribe una palabra que no entiendas (¡con mayúsculas!): ") 
-
-if word in meme_dict.keys():
-    print(meme_dict[word])
-    # ¿Qué debemos hacer si se encuentra la palabra?
-else:
-    print("no se encontro la palabra")
-    # ¿Qué hacer si no se encuentra la palabra?
+    if word in meme_dict.keys():
+       print("gracias por escribirlo bien :)")
+       print("la palabra se a encontrado:")
+       print(meme_dict[word])
+    else:
+        print("ERROR")
+        print("no se encontro la palabra")
+        print("por favor intente de nuevo")
