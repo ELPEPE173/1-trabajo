@@ -1,0 +1,9 @@
+import random
+
+simbolos = ['+', '-', '/', '&', '$', '#', '=', '@', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'n', 'o', 'p', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'S', 'T','U', 'V', 'W', 'X', 'Y', 'Z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+
+resp = int(input("Elige la longitud de la contraseña: "))
+
+for i in range(resp):
+    nume = random.randint(0, len(simbolos) - 1)
+    print(simbolos[nume], end='')
