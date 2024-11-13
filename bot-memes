@@ -1,0 +1,43 @@
+import discord
+import os
+import random
+from discord.ext import commands
+
+intents = discord.Intents.default()
+intents.message_content = True
+bot = commands.Bot(command_prefix='$', intents=intents)
+
+# Definir la lista de imágenes desde la carpeta correcta
+
+
+@bot.event
+async def on_ready():
+    print(f'Ha iniciado sesión como {bot.user}')
+
+
+@bot.command()
+async def animal(ctx):
+    # Seleccionar una imagen aleatoria
+    img_name = random.choice(os.listdir('mod2l4\\animales'))
+    # Abrir la imagen desde la carpeta correcta
+    with open(f'mod2l4/animales/{img_name}', 'rb') as f:
+        picture = discord.File(f)
+    await ctx.send(file=picture)
+
+
+
+
+@bot.command()
+async def mem(ctx):
+    # Seleccionar una imagen aleatoria
+    img_name = random.choice(os.listdir('mod2l4\imagenes'))
+    # Abrir la imagen desde la carpeta correcta
+    with open(f'mod2l4/imagenes/{img_name}', 'rb') as f:
+            picture = discord.File(f)
+    await ctx.send(file=picture)
+
+
+
+TOKEN = ''
+
+bot.run(TOKEN)
