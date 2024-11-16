@@ -1,0 +1,35 @@
+import discord
+import os
+from discord.ext import commands
+import random
+# Configuración del bot con el prefijo y los intents necesarios
+intents = discord.Intents.default()
+bot = commands.Bot(command_prefix='!', intents=intents)
+
+@bot.event
+async def on_ready():
+    print(f'Bot {bot.user.name} está listo y conectado a Discord!')
+
+# Comando para enviar información y una imagen
+@bot.command()
+async def informacion(ctx):
+    await ctx.send('¿Qué es la contaminación? La contaminación es cuando cosas dañinas, como químicos, basura o gases tóxicos, entran en nuestro ambiente y lo ensucian, afectando al aire, al agua y al suelo. Esto puede suceder por actividades humanas, como las fábricas que liberan humo, los coches que emiten gases y la basura que no se recicla adecuadamente. para ver una imagen sobre eso escriba !imagen, quieres saber como reducirla escribe !reduccion')
+
+@bot.command()
+async def reduccion(ctx):
+    await ctx.send('Usa menos plástico: Lleva tu propia botella de agua reutilizable y bolsas de tela cuando vayas de compras. Evita los productos de un solo uso, como pajitas y cubiertos de plástico.Recicla: Aprende a separar correctamente la basura y recicla papel, plástico, vidrio y metales. Usa contenedores de reciclaje en casa y en la escuela.Ahorra energía: Apaga las luces, computadoras y otros dispositivos cuando no los estés usando. Utiliza bombillas LED que consumen menos energía.Desplázate de manera ecológica: Camina, anda en bicicleta o usa el transporte público en lugar de pedir que te lleven en coche. Compartir viajes con amigos también es una gran opción.Ahorra agua: Cierra el grifo mientras te cepillas los dientes y toma duchas más cortas. Repara los grifos que gotean para no desperdiciar agua.Participa en actividades comunitarias: Únete a grupos que realicen limpiezas en parques, playas o tu vecindario. Esto no solo ayuda al medio ambiente, sino que también es una gran manera de conocer gente nueva.Informa y educa: Habla con tus amigos y familiares sobre la importancia de cuidar el medio ambiente. Puedes compartir lo que has aprendido y animar a otros a hacer cambios positivos.Consume de manera responsable: Compra productos locales y de temporada para reducir la huella de carbono. Prefiere productos con empaques reciclables o biodegradables.Reduce y reutiliza: En lugar de comprar cosas nuevas, busca maneras de reutilizar lo que ya tienes. Puedes hacer manualidades, reparar ropa o intercambiar artículos con amigos.  quieres saber informacion sobre la contaminacion escriba !informacion o si quieres ver una imagen escriba !imagen     ')
+
+
+@bot.command(name='imagen')
+async def imagen(ctx):
+    # Selecciona una imagen aleatoria de la carpeta especificada
+    img_name = random.choice(os.listdir('botmedioambiente/imagen'))
+    with open(f'botmedioambiente/imagen/{img_name}', 'rb') as f:
+        picture = discord.File(f)
+        await ctx.send(file=picture)
+   
+    
+
+# Ejecuta el bot con tu token de Discord
+TOKEN = ('')
+bot.run(TOKEN)
