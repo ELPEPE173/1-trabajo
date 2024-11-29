@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sifunciono!!!!!!!</title>
+</head>
+<body>
+    <title>Información útil</title>
+        <link rel="stylesheet" href="style.css">
+    <h1>COMO evolucionaron LOS MEMES.</h1>
+    <p>Esto sera una mini explicacion(creo)</p>
+    <h2>INIcio</h2>
+             <ul>
+                   <li>Los memes han experimentado una evolución fascinante desde sus inicios. El concepto de "meme" fue acuñado por Richard Dawkins en 1976 en su libro "El Gen Egoísta". Con la llegada de Internet, los primeros memes eran simples y estaban basados en texto, como los famosos "Emoticonos" y "ASCII Art". Luego surgieron las imágenes con texto superpuesto, conocidas como "image macros". Con el auge de redes sociales y foros como Reddit, 4chan y Tumblr, los memes comenzaron a proliferar. Ejemplos clásicos incluyen "Rage Comics", "Trollface" y "Bad Luck Brian".</li>
+                   <li>Y este seria el final con un perro con sejas que saque de internet al azar de un ejemplo de momo</li>
+             </ul>
+     <img src="/html/waos.jpg" alt="Image 1">
+</body>
+</html>
