@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sifunciono!!!!!!!</title>
+</head>
+<body>
+    <title>Información útil</title>
+        <link rel="stylesheet" hef="style.css">
+    <h1>COMO evolucionaron LOS MEMES.</h1>
+    <p>Esto sera una mini explicacion(creo)</p>
+    <h2>INIcio</h2>
+             <ul>
+                   <h3>Los memes han experimentado una evolución fascinante desde sus inicios. El concepto de "meme" fue acuñado por Richard Dawkins en 1976 en su libro "El Gen Egoísta". Con la llegada de Internet, los primeros memes eran simples y estaban basados en texto, como los famosos "Emoticonos" y "ASCII Art". Luego surgieron las imágenes con texto superpuesto, conocidas como "image macros". Con el auge de redes sociales y foros como Reddit, 4chan y Tumblr, los memes comenzaron a proliferar. Ejemplos clásicos incluyen "Rage Comics", "Trollface" y "Bad Luck Brian".</h3>
+                   <h3>Y este seria el final con un perro con sejas que saque de internet al azar de un ejemplo de momo</h3>
+                   
+             </ul>
+     <img class=card src="/html/waos.jpg" alt="Image 1">
+
+             <h3>LOs lugares donde se pueden encontrar memes son en reddit, tiktok, o twiter</h3>   
+             <iframe src="https://www.meteoblue.com/en/weather/widget/daily/ip_romania_675514?geoloc=fixed&days=4&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=coloured&pictoicon=1&maxtemperature=1&mintemperature=1&windspeed=1&windgust=0&winddirection=1&uv=0&humidity=0&precipitation=1&precipitationprobability=1&spot=1&pressure=0&layout=light"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 216px; height: 420px"></iframe><div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/en/weather/week/ip_romania_675514?utm_source=daily_widget&utm_medium=linkus&utm_content=daily&utm_campaign=Weather%2BWidget" target="_blank" rel="noopener">meteoblue</a></div>
+             
+             
+             
+</body>
+</html>
